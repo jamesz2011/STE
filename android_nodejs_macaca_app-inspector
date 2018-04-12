@@ -1,0 +1,115 @@
+
+
+
+*****************************************************************************
+
+
+【1.android】
+
+【CMD---输入---以下】
+
+1.ANDROID_HOME 添加sdk的路径
+  
+【ANDROID_HOME -》】 D:\soft\test\Android\sdk\android-sdk-windows
+
+
+2.%ANDROID_HOME% 添加到path
+  
+【path中 -》】 %ANDROID_HOME%
+
+
+3.系统环境变量PATH --->添加platform-tools、tools
+
+
+   【path中 -》】  D:\soft\test\Android\sdk\android-sdk-windows\platform-tools;D:\soft\test\Android\sdk\android-sdk-windows\tools;
+
+
+4.验证输入 adb
+  
+   adb
+
+
+
+
+*****************************************************************************
+
+
+
+
+【2.nodejs】
+
+【CMD---输入---以下】
+  
+  npm config set prefix "D:\soft\tools\nodejs\node_global"
+
+  npm config set cache "D:\soft\tools\nodejs\node_cache"
+
+
+    【path中 -》】 D:\soft\tools\nodejs\node_global
+
+
+*****************************************************************************
+
+【3.macaca】
+
+【CMD---输入---以下】
+
+1、Macaca由Node.js开发，所以需要安装Node.js。
+
+https://nodejs.org/en/
+
+2、安装Node.js完成。 首先切换切换淘宝源，因为国外资源访问很慢，而且有些资源还无法下载。
+
+> npm install -g cnpm --registry=https://registry.npm.taobao.org 
+
+3、通过淘宝源安装 macaca-cli
+
+>  cnpm i macaca-cli -g
+
+4、安装webdriver-client
+
+> cnpm install webdriver-client
+
+5、安装macaca-electron
+
+>  cnpm install macaca-electron -g
+
+macaca-electron是基于Electron开发的Macaca驱动，是Macaca驱动之一。本文将从零介绍如何对 Electron 进行封装，实现一个简易版的驱动程序。
+
+
+6、安装macaca-chrome
+
+>   cnpm install macaca-chrome -g
+
+
+
+
+7.macaca -v 或 macaca doctor    -------用于检查Macaca各环境
+
+   macaca -v
+
+   macaca doctor
+
+
+*****************************************************************************
+
+【4.app-inspector】----app-inspector安装前必须先安装nodejs和Macaca
+
+
+
+
+1.安装app-inspecto
+
+
+>    npm install app-inspector -g
+
+
+
+2.使用 app-inspector -u YOUR-DEVICE-ID
+
+
+
+app-inspector -u YOUR-DEVICE-ID
+
+
+
